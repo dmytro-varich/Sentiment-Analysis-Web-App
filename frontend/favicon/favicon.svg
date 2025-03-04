@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="510" height="510"><svg width="510" height="510" viewBox="0 0 510 510" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7_32)">
+<path d="M510 0H0V510H510V0Z" fill="black"></path>
+<path d="M149.5 115C161.926 115 172 104.926 172 92.5C172 80.0736 161.926 70 149.5 70C137.074 70 127 80.0736 127 92.5C127 104.926 137.074 115 149.5 115Z" fill="white"></path>
+<path d="M357.5 115C369.926 115 380 104.926 380 92.5C380 80.0736 369.926 70 357.5 70C345.074 70 335 80.0736 335 92.5C335 104.926 345.074 115 357.5 115Z" fill="white"></path>
+<path d="M357.5 442C369.926 442 380 431.926 380 419.5C380 407.074 369.926 397 357.5 397C345.074 397 335 407.074 335 419.5C335 431.926 345.074 442 357.5 442Z" fill="white"></path>
+<path d="M149.5 442C161.926 442 172 431.926 172 419.5C172 407.074 161.926 397 149.5 397C137.074 397 127 407.074 127 419.5C127 431.926 137.074 442 149.5 442Z" fill="white"></path>
+<path d="M475.269 265.999L35.2764 268.481" stroke="white" stroke-width="20"></path>
+<path d="M465.315 274.055L464.993 217.056" stroke="white" stroke-width="20"></path>
+<path d="M45.3213 276.424L44.9999 219.425" stroke="white" stroke-width="20"></path>
+</g>
+<defs>
+<clipPath id="SvgjsClipPath1001">
+<rect width="510" height="510" fill="white"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

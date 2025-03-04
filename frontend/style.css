@@ -1,0 +1,71 @@
+.main-container {
+    width: 50%;
+    margin: 50px auto; 
+    padding: 20px;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    background: #ecdcfc;
+    background: #f2f2f2;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(150, 150, 150);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+  width: 97%;           
+  height: 100px;       
+  padding: 10px;        
+  border: 1px solid #aaa;  
+  border-radius: 5px;   
+  resize: none;         
+  overflow: hidden; 
+  min-height: 100px; 
+  field-sizing: content;
+  transition: height 0.3s ease-in-out;   
+}
+
+button {
+  background-color: black; 
+  color: white; 
+  font-size: 18px; 
+  margin-top: 10px;
+  font-weight: 500; 
+  font-family: 'arial', source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+button:hover {
+  background-color: #333; 
+  transform: scale(1.01); 
+}
+
+button:active {
+  transform: scale(0.98); 
+}  
+
+.emoji {
+    font-size: 50px; 
+    cursor: pointer; 
+    color: gray;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.3s ease, font-size 0.3s ease; 
+}

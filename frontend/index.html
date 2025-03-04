@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Sentiment Analysis</h1>
+      <p>
+        This project focuses on Sentiment Analysis as part of an assignment for
+        the Fundamentals of Cloud Technologies course. The goal is to develop a
+        functional web application and later containerize it using Docker. The
+        project was created by Dmytro Varich, and you can check out his
+        <a href="https://github.com/dmytro-varich" target="_blank">GitHub</a>.
+      </p>
+      <div class="container">
+        <textarea id="textInput" placeholder="Enter text..."></textarea>
+        <button onclick="analyzeText()">Check</button>
+        <p class="result">
+          <span id="positive-emoji" class="emoji">😃</span
+          ><span id="neutral-emoji" class="emoji">😐</span
+          ><span id="negative-emoji" class="emoji">☹️</span>
+        </p>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
