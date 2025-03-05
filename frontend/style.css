@@ -119,12 +119,12 @@ button:active {
   .name {
     font-size: 2em;
   }
-  
+
   .main-container {
     width: 86%;
   }
 
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
