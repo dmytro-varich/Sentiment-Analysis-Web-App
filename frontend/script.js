@@ -22,7 +22,7 @@ document.querySelectorAll('.button').forEach(btn => {
 
 const API_URL = window.location.hostname === "localhost"
     ? "http://localhost:8000/analyze"                           // For local development
-    : "empowering-embrace-production.up.railway.app/analyze";   // For the production version on Railway
+    : "http://empowering-embrace-production.up.railway.app/analyze";   // For the production version on Railway
 
 window.analyzeText = async function() {
     console.log("Analyzing text...");
