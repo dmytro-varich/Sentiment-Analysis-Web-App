@@ -15,7 +15,8 @@ app = FastAPI(title="Sentiment Analysis API", version="0.1")
 origins = [
     "http://localhost:8080",  # Local frontend
     "http://127.0.0.1:8080",  # Alternative local address
-    "http://frontend:8080",     # Docker frontend
+    "http://frontend:8080",   # Docker frontend 
+    "https://sentiment-analysis-web-app-production.up.railway.app" # Railway frontend URL
 ]
 
 # Enable CORS middleware to allow frontend communication
