@@ -117,10 +117,10 @@ button:active {
 
 @media screen and (max-width: 780px) {
   .main-container {
-    width: 90%;
+    width: 86%;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 14px;
   }
 }
