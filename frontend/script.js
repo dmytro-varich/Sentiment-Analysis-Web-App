@@ -11,6 +11,14 @@ textarea.addEventListener("input", () => {
     textarea.style.height = `${textarea.scrollHeight - 20}px`;
 });
 
+document.querySelectorAll('.button').forEach(btn => {
+    btn.addEventListener('touchstart', () => {
+      btn.classList.add('active');
+    });
+    btn.addEventListener('touchend', () => {
+      btn.classList.remove('active');
+    });
+  });
 
 window.analyzeText = async function() {
     console.log("Analyzing text...");
