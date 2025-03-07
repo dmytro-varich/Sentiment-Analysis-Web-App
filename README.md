@@ -11,12 +11,14 @@ sentiment-analysis-web-app/
 │   ├── main.py            # Code for the web application (Backend)
 │   ├── requirements.txt   # Required dependencies 
 │   ├── Dockerfile         # Docker image for the backend service
+│   ├── .dockerignore      # Specifies ignored files for the backend 
 │── frontend/ 
 │   ├── favicon/           # Favicon images for the frontend
 │   ├── index.html         # HTML file for the user interface
 │   ├── style.css          # CSS file for styling the frontend
 │   ├── script.js          # JavaScript to handle frontend logic
 │   ├── Dockerfile         # Docker image for Nginx (Frontend)
+│   ├── .dockerignore      # Specifies ignored files for the frontend
 │── docker-compose.yml     # Docker Compose file for orchestrating containers
 │── start-app.sh           # Script to start the application
 │── end-app.sh             # Script to stop the application
@@ -29,7 +31,8 @@ sentiment-analysis-web-app/
 - **Deployment:** `Docker`, `Docker Compose`.
 
 # 🎥 Demo Video
-...
+
+https://github.com/user-attachments/assets/0012e651-1977-484d-99e3-fcdbaac4224b
 
 # 🐳 Docker Usage 
 
