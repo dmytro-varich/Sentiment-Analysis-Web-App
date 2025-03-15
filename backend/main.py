@@ -14,7 +14,7 @@ sia = SentimentIntensityAnalyzer()
 app = FastAPI(title="Sentiment Analysis API", version="0.1")
 
 # Load environment variables from the .env file
-load_dotenv(dotenv_path='.env')
+load_dotenv(dotenv_path='.env', override=False)
 
 # Define allowed origins for CORS (Cross-Origin Resource Sharing)
 origins = [
