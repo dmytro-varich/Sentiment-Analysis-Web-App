@@ -20,6 +20,8 @@ sentiment-analysis-web-app/
 │   ├── Dockerfile         # Docker image for Nginx (Frontend)
 │   ├── .dockerignore      # Specifies ignored files for the frontend
 │── docker-compose.yml     # Docker Compose file for orchestrating containers
+│── .env.docker            # 
+│── .env.local             # 
 │── start-app.sh           # Script to start the application
 │── end-app.sh             # Script to stop the application
 │── README.md              # Project documentation
@@ -43,7 +45,7 @@ https://github.com/user-attachments/assets/0012e651-1977-484d-99e3-fcdbaac4224b
 
 2. To start the backend and frontend containers, run the startup script:  
    ```sh
-   ./start-app.sh
+   ./start-app.sh 
    ```
 
 3. Verify that both containers are running by executing:  

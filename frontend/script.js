@@ -20,10 +20,9 @@ document.querySelectorAll('.button').forEach(btn => {
     });
   });
 
-const API_URL = window.location.hostname === "localhost"
-    ? "http://localhost:8000/analyze"                           // For local development
-    : "https://sentiment-analysis-web-app-backend.up.railway.app/analyze";   // For the production version on Railway
-
+// Get the backend URL from the environment variable
+const backendUrl = window.BACKEND_URL || "http://localhost:8000/analyze";
+console.log("Backend URL:", backendUrl);
 window.analyzeText = async function() {
     console.log("Analyzing text...");
     const text = document.getElementById("textInput").value;
@@ -34,7 +33,7 @@ window.analyzeText = async function() {
     console.log("Text:", text);
 
     try {
-        const response = await fetch(`${API_URL}`, {
+        const response = await fetch(`${backendUrl}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text })

@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import nltk
@@ -11,12 +13,12 @@ sia = SentimentIntensityAnalyzer()
 # Initialize the FastAPI application
 app = FastAPI(title="Sentiment Analysis API", version="0.1")
 
+# Load environment variables from the .env file
+load_dotenv(dotenv_path='.env')
+
 # Define allowed origins for CORS (Cross-Origin Resource Sharing)
 origins = [
-    "http://localhost:8080",  # Local frontend
-    "http://127.0.0.1:8080",  # Alternative local address
-    "http://frontend:8080",   # Docker frontend 
-    "https://sentiment-analysis-web-app-production.up.railway.app" # Railway frontend URL
+    os.getenv("FRONTEND_URL", "http://localhost:8080")
 ]
 
 # Enable CORS middleware to allow frontend communication

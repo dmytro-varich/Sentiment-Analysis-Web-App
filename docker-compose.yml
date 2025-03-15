@@ -1,5 +1,7 @@
 services: 
   backend:
+    env_file: 
+      - .env
     build: ./backend
     ports:
       - "8000:8000"
@@ -8,6 +10,8 @@ services:
       - app-network
 
   frontend:
+    env_file: 
+      - .env
     build: ./frontend
     ports:
       - "8080:80"
