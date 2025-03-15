@@ -20,8 +20,7 @@ sentiment-analysis-web-app/
 │   ├── Dockerfile         # Docker image for Nginx (Frontend)
 │   ├── .dockerignore      # Specifies ignored files for the frontend
 │── docker-compose.yml     # Docker Compose file for orchestrating containers
-│── .env.docker            # 
-│── .env.local             # 
+│── .env                   # File with environment variables
 │── start-app.sh           # Script to start the application
 │── end-app.sh             # Script to stop the application
 │── README.md              # Project documentation
@@ -60,8 +59,10 @@ https://github.com/user-attachments/assets/0012e651-1977-484d-99e3-fcdbaac4224b
    ```
 
 4. Access the application in a web browser:  
-   - **Frontend:** [http://127.0.0.1:8080](http://127.0.0.1:8080) or [http://localhost:8080](http://localhost:8080)  
-   - **Backend API:** [http://127.0.0.1:8000/analyze](http://127.0.0.1:8000/analyze)  
+   - **Frontend:** [http://localhost:8080](http://localhost:8080).  
+   - **Backend API:** [http://localhost:8000/analyze](http://localhost:8000/analyze).
+  
+   > You can modify the `FRONTEND_URL` and `BACKEND_URL` environment variables in the `.env` file to change the addresses for the frontend and backend, respectively.
 
 5. To enter a running container, use:  
    ```sh
@@ -72,6 +73,7 @@ https://github.com/user-attachments/assets/0012e651-1977-484d-99e3-fcdbaac4224b
    ```sh
    ./end-app.sh
    ```
+
 # 🌐 Deployment
 For demonstration purposes, the web application has been deployed for free on the Railway server, without the need to run the project locally or use Docker Compose. You can access it at the following URL: [https://sentiment-analysis-web-app-production.up.railway.app/](https://sentiment-analysis-web-app-production.up.railway.app/). Please note that this deployment will be available for an indefinite period, subject to Railway's free-tier limits.
 
