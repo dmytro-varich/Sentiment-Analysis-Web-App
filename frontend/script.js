@@ -21,8 +21,9 @@ document.querySelectorAll('.button').forEach(btn => {
   });
 
 // Get the backend URL from the environment variable
-const backendUrl = window.BACKEND_URL || "http://localhost:8000/analyze";
+const backendUrl = process.env.BACKEND_URL || "http://localhost:8000/analyze";
 console.log("Backend URL:", backendUrl);
+
 window.analyzeText = async function() {
     console.log("Analyzing text...");
     const text = document.getElementById("textInput").value;
